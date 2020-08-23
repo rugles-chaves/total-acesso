@@ -1,5 +1,5 @@
 <?php 
-include './model/s_menu.php'
+include '../model/s_menu.php'
 ?>
 
 <?php
@@ -39,5 +39,5 @@ while ($usuario = mysql_fetch_object($sql)) {
             
         <?php 
 }
-include './model/footer.php'
+include '../model/footer.php'
 ?>

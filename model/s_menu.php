@@ -120,7 +120,7 @@ img.scaled {
 <body>
 <header>
 
-  <img src="./img/totalseg.png"  width=auto height=100>
+  <img src="../img/totalseg.png"  width=auto height=100>
 
 </header>
 
