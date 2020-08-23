@@ -1,7 +1,7 @@
 <?php 
 include './model/header.php'
 ?>
-tteste
+
 <center>
 <h1>Cadastro de Usuário</h1>
                            
