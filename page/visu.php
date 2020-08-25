@@ -25,12 +25,16 @@ while ($usuario = mysql_fetch_object($sql)) {
                     <p> <?php echo "<img src='fotos/".$usuario->foto."' alt='Foto de exibição' width='300' height='300'/><br />"; ?>
                         
                     <p><?php echo "<b>NOME:</b> " . $usuario->nome . "<br />";  ?>
+                    <p><?php echo "<b>RG:</b> " . $usuario->rg . "<br />";  ?>
+                    <p><?php echo "<b>Nº SARAM:</b> " . $usuario->sarram . "<br />";  ?>
             </div>
 
             <div class=figure>
                     <p> <?php echo "<img src='fotos/".$usuario->foto2."' alt='Foto de exibição' width='300' height='300'/><br />"; ?>
                         
                     <p><?php echo "<b>PLACA:</b> " . $usuario->email . "<br />";  ?>
+                    <p><?php echo "<b>MODELO:</b> " . $usuario->tipo_carr . "<br />";  ?>
+                    <p><?php echo "<b>COR:</b> " . $usuario->cor_carr . "<br />";  ?>
                     </div>
 
                     

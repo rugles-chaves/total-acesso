@@ -28,6 +28,20 @@ include '../model/header.php'
             <label class="w3-text-blue"><b>NOME</b></label>
             <input class="w3-input w3-border" name="nome" type="text"></p>
             <p> 
+
+            <label class="w3-text-blue"><b>RG</b></label>
+            <input class="w3-input w3-border" name="rg" type="text"></p>
+            <p> 
+
+            <label class="w3-text-blue"><b>SARAM</b></label>
+            <input class="w3-input w3-border" name="sarram" type="text"></p>
+
+            <label class="w3-text-blue"><b>TIPO DE CARRO</b></label>
+            <input class="w3-input w3-border" name="tipo_carr" type="text"></p>
+            <p> 
+            <label class="w3-text-blue"><b>COR DE CARRO</b></label>
+            <input class="w3-input w3-border" name="cor_carr" type="text"></p>
+
             <label class="w3-text-blue" ><b>PLACA</b></label>
             <input class="w3-input w3-border" name="email" type="text" class="data" id="data"></p>
             <p>
@@ -64,6 +78,10 @@ if (isset($_POST['cadastrar'])) {
     $email = $_POST['email'];
     $foto = $_FILES["foto"];
     $foto2 = $_FILES["foto2"];
+    $rg = $_POST['rg'];
+    $sarram = $_POST["sarram"];
+    $cor_carr = $_POST["cor_carr"];
+    $tipo_carr = $_POST["tipo_carr"];
     //$data = 
    
     
@@ -110,13 +128,14 @@ if (isset($_POST['cadastrar'])) {
                 move_uploaded_file($foto2["tmp_name"], $caminho_imagem2);
             
                 // Insere os dados no banco
-                $sql = mysql_query("INSERT INTO usuarios VALUES ('',  '".$cod."','".$nome."', '".$email."', '".$nome_imagem."', '".$nome_imagem2."','')");
-            
+                $sql = mysql_query("INSERT INTO usuarios VALUES ('',  '".$cod."','".$nome."', '".$email."', '".$nome_imagem."', '".$nome_imagem2."','','".$rg."','".$sarram."','".$cor_carr."','".$tipo_carr."')");
+               // $sql = mysql_query(" INSERT INTO usuarios(nome,cad,email,foto,foto2,data,rg,sarram,tipo_carr,cor_carr) VALUES('".$nome."', ".$cod."','".$email."', '".$nome_imagem."', '".$nome_imagem2."','', '".$rg.", '".$sarram.", '".$tipo_carr.", '".$cor_carr.")");
                 // Se os dados forem inseridos com sucesso
                 if ($sql){
                     echo "Você foi cadastrado com sucesso.";
                     
                 }
+                
             }
     
         // Se houver mensagens de erro, exibe-as
