@@ -91,12 +91,7 @@ separador = '===================================================================
 
   
 
-   conexao.write( protocol.codificaMensagem({
-        operacao: 'Remove cartões',
-    }) );
-
-
-    console.log('Iniciando atividade');
+   console.log('Iniciando atividade');
     atividade[index] = setInterval(function() {
         conexao.write( protocol.codificaMensagem({
           operacao: 'Mantem atividade',
