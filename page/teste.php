@@ -1,6 +1,17 @@
 <?php 
 include '../model/header.php'
+
 ?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Usando máscaras com jquery</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.maskedinput.js"></script>
+</head>
+<script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>  
+
 
 <center>
 <h1>Cadastro de Usuário</h1>
@@ -17,8 +28,8 @@ include '../model/header.php'
             <label class="w3-text-blue"><b>NOME</b></label>
             <input class="w3-input w3-border" name="nome" type="text"></p>
             <p> 
-            <label class="w3-text-blue"><b>E-MAIL</b></label>
-            <input class="w3-input w3-border" name="email" type="text"></p>
+            <label class="w3-text-blue" ><b>PLACA</b></label>
+            <input class="w3-input w3-border" name="email" type="text" class="data" id="data"></p>
             <p>
                 
             <label class="w3-text-blue"><b>FOTO</b></label>
@@ -53,6 +64,7 @@ if (isset($_POST['cadastrar'])) {
     $email = $_POST['email'];
     $foto = $_FILES["foto"];
     $foto2 = $_FILES["foto2"];
+    //$data = 
    
     
     // Se a foto estiver sido selecionada
@@ -98,7 +110,7 @@ if (isset($_POST['cadastrar'])) {
                 move_uploaded_file($foto2["tmp_name"], $caminho_imagem2);
             
                 // Insere os dados no banco
-                $sql = mysql_query("INSERT INTO usuarios VALUES ('',  '".$cod."','".$nome."', '".$email."', '".$nome_imagem."', '".$nome_imagem2."')");
+                $sql = mysql_query("INSERT INTO usuarios VALUES ('',  '".$cod."','".$nome."', '".$email."', '".$nome_imagem."', '".$nome_imagem2."','')");
             
                 // Se os dados forem inseridos com sucesso
                 if ($sql){
