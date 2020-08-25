@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 25-Ago-2020 às 11:30
--- Versão do servidor: 5.6.26
+-- Generation Time: 26-Ago-2020 Ã s 01:56
+-- VersÃ£o do servidor: 5.6.26
 -- PHP Version: 5.6.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -33,42 +33,38 @@ CREATE TABLE IF NOT EXISTS `acessos` (
   `email` varchar(100) NOT NULL,
   `foto` varchar(100) NOT NULL,
   `foto2` varchar(100) NOT NULL,
-  `data` varchar(100) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1;
+  `data` varchar(100) NOT NULL,
+  `sarram` varchar(100) NOT NULL,
+  `rg` varchar(100) NOT NULL,
+  `tipo_carr` varchar(100) NOT NULL,
+  `cor_carr` varchar(100) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=132 DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `acessos`
 --
 
-INSERT INTO `acessos` (`id`, `cad`, `nome`, `email`, `foto`, `foto2`, `data`) VALUES
-(27, '2', 'rugles', 'rugles@gmail', 'f2cf1ac7789ffab2d8e912820875a7a6.jpg', 'bec891f6bcb69efa50bb5ebf7fd3168d.jpg', '24/08/2020 21:03:27'),
-(28, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 21:09:56'),
-(29, '2', 'rugles', 'rugles@gmail', 'f2cf1ac7789ffab2d8e912820875a7a6.jpg', 'bec891f6bcb69efa50bb5ebf7fd3168d.jpg', '24/08/2020 21:13:20'),
-(30, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 21:13:23'),
-(31, '2', 'rugles', 'rugles@gmail', 'f2cf1ac7789ffab2d8e912820875a7a6.jpg', 'bec891f6bcb69efa50bb5ebf7fd3168d.jpg', '24/08/2020 21:13:28'),
-(32, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 21:13:31'),
-(33, '2', 'rugles', 'rugles@gmail', 'f2cf1ac7789ffab2d8e912820875a7a6.jpg', 'bec891f6bcb69efa50bb5ebf7fd3168d.jpg', '24/08/2020 21:14:36'),
-(34, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 21:14:50'),
-(35, '2', 'rugles', 'rugles@gmail', 'f2cf1ac7789ffab2d8e912820875a7a6.jpg', 'bec891f6bcb69efa50bb5ebf7fd3168d.jpg', '24/08/2020 21:14:53'),
-(36, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 21:14:56'),
-(37, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 21:14:59'),
-(38, '2', 'rugles', 'rugles@gmail', 'f2cf1ac7789ffab2d8e912820875a7a6.jpg', 'bec891f6bcb69efa50bb5ebf7fd3168d.jpg', '24/08/2020 21:15:05'),
-(39, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 21:15:08'),
-(40, '2', 'rugles', 'rugles@gmail', 'f2cf1ac7789ffab2d8e912820875a7a6.jpg', 'bec891f6bcb69efa50bb5ebf7fd3168d.jpg', '24/08/2020 21:15:24'),
-(41, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 21:15:27'),
-(42, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 21:15:34'),
-(43, '2', 'rugles', 'rugles@gmail', 'f2cf1ac7789ffab2d8e912820875a7a6.jpg', 'bec891f6bcb69efa50bb5ebf7fd3168d.jpg', '24/08/2020 21:15:37'),
-(44, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 21:15:40'),
-(45, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 21:53:08'),
-(46, '2', 'rugles', 'rugles@gmail', 'f2cf1ac7789ffab2d8e912820875a7a6.jpg', 'bec891f6bcb69efa50bb5ebf7fd3168d.jpg', '24/08/2020 21:53:15'),
-(47, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 21:53:18'),
-(48, '10', 'Rugles AssunÃ§Ã£o Chaves', 'Jxt 2323', 'be71ee6045117f3556137e0bf98cd455.jpg', '5f74cd016948272a5e75421bd9f4a281.jpg', '24/08/2020 22:00:34'),
-(49, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 22:00:57'),
-(50, '12', 'Rugles', 'Hhh1212', 'ac562dc927e2fb4bebabb8c5d03f5e81.jpg', 'b77c8c2d825906ff1b4728f42d906273.', '24/08/2020 22:04:11'),
-(51, '10', 'Rugles AssunÃ§Ã£o Chaves', 'Jxt 2323', 'be71ee6045117f3556137e0bf98cd455.jpg', '5f74cd016948272a5e75421bd9f4a281.jpg', '24/08/2020 22:04:16'),
-(52, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 22:05:00'),
-(53, '10', 'rugles', 'rugles@gmaild', '1e07e7aba0bb747a069f7e3d499d2d6a.jpg', '766982327c0b23d6a74f91b0a0d78594.jpg', '24/08/2020 22:06:01'),
-(54, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 22:06:15');
+INSERT INTO `acessos` (`id`, `cad`, `nome`, `email`, `foto`, `foto2`, `data`, `sarram`, `rg`, `tipo_carr`, `cor_carr`) VALUES
+(112, '2', 'ANA PAULA', 'JXO-1213', '42a15c290a879b46db3d750ab702fe01.jpeg', '8712acd754fdbd4abd6571d852150e77.jpg', '', '2512', '11111111111', 'FUSCA', 'AMARELO/BRANDO'),
+(113, '2', 'ANA PAULA', 'JXO-1213', '42a15c290a879b46db3d750ab702fe01.jpeg', '8712acd754fdbd4abd6571d852150e77.jpg', '25/08/2020 16:48:21', '2512', '11111111111', 'FUSCA', 'AMARELO/BRANDO'),
+(114, '3', 'RUGLES', 'JXO-1212', 'a98eaccd4ee8fd9c9f1314dc80189bbd.jpg', '8653eb6c64ab52bf7c6617f2f2150141.jpg', '25/08/2020 16:48:29', '23256', '14956888', 'MACLAREN', 'BRANCA'),
+(115, '3', 'RUGLES', 'JXO-1212', 'a98eaccd4ee8fd9c9f1314dc80189bbd.jpg', '8653eb6c64ab52bf7c6617f2f2150141.jpg', '25/08/2020 16:54:40', '23256', '14956888', 'MACLAREN', 'BRANCA'),
+(116, '2', 'ANA PAULA', 'JXO-1213', '42a15c290a879b46db3d750ab702fe01.jpeg', '8712acd754fdbd4abd6571d852150e77.jpg', '25/08/2020 16:54:57', '2512', '11111111111', 'FUSCA', 'AMARELO/BRANDO'),
+(117, '3', 'RUGLES', 'JXO-1212', 'a98eaccd4ee8fd9c9f1314dc80189bbd.jpg', '8653eb6c64ab52bf7c6617f2f2150141.jpg', '25/08/2020 16:56:14', '23256', '14956888', 'MACLAREN', 'BRANCA'),
+(118, '2', 'ANA PAULA', 'JXO-1213', '42a15c290a879b46db3d750ab702fe01.jpeg', '8712acd754fdbd4abd6571d852150e77.jpg', '25/08/2020 16:56:23', '2512', '11111111111', 'FUSCA', 'AMARELO/BRANDO'),
+(119, '9015654', 'ANA PAULA', 'JXO-1213', '42a15c290a879b46db3d750ab702fe01.jpeg', '8712acd754fdbd4abd6571d852150e77.jpg', '25/08/2020 16:56:23', '2512', '11111111111', 'FUSCA', 'AMARELO/BRANDO'),
+(120, '16117373', 'RUGLES', 'JXO-1212', 'a98eaccd4ee8fd9c9f1314dc80189bbd.jpg', '8653eb6c64ab52bf7c6617f2f2150141.jpg', '25/08/2020 16:56:14', '23256', '14956888', 'MACLAREN', 'BRANCA'),
+(121, '16117373', 'RUGLES', 'JXO-1212', 'a98eaccd4ee8fd9c9f1314dc80189bbd.jpg', '8653eb6c64ab52bf7c6617f2f2150141.jpg', '25/08/2020 17:08:46', '23256', '14956888', 'MACLAREN', 'BRANCA'),
+(122, '9015654', 'ANA PAULA', 'JXO-1213', '42a15c290a879b46db3d750ab702fe01.jpeg', '8712acd754fdbd4abd6571d852150e77.jpg', '25/08/2020 17:08:50', '2512', '11111111111', 'FUSCA', 'AMARELO/BRANDO'),
+(123, '9015654', 'ANA PAULA', 'JXO-1213', '42a15c290a879b46db3d750ab702fe01.jpeg', '8712acd754fdbd4abd6571d852150e77.jpg', '25/08/2020 17:09:35', '2512', '11111111111', 'FUSCA', 'AMARELO/BRANDO'),
+(124, '16117373', 'RUGLES', 'JXO-1212', 'a98eaccd4ee8fd9c9f1314dc80189bbd.jpg', '8653eb6c64ab52bf7c6617f2f2150141.jpg', '25/08/2020 17:09:38', '23256', '14956888', 'MACLAREN', 'BRANCA'),
+(125, '9015654', 'ANA PAULA', 'JXO-1213', '42a15c290a879b46db3d750ab702fe01.jpeg', '8712acd754fdbd4abd6571d852150e77.jpg', '25/08/2020 17:09:42', '2512', '11111111111', 'FUSCA', 'AMARELO/BRANDO'),
+(126, '16117373', 'RUGLES', 'JXO-1212', 'a98eaccd4ee8fd9c9f1314dc80189bbd.jpg', '8653eb6c64ab52bf7c6617f2f2150141.jpg', '25/08/2020 17:09:45', '23256', '14956888', 'MACLAREN', 'BRANCA'),
+(127, '9015654', 'ANA PAULA', 'JXO-1213', '42a15c290a879b46db3d750ab702fe01.jpeg', '8712acd754fdbd4abd6571d852150e77.jpg', '25/08/2020 17:09:48', '2512', '11111111111', 'FUSCA', 'AMARELO/BRANDO'),
+(128, '16117373', 'RUGLES', 'JXO-1212', 'a98eaccd4ee8fd9c9f1314dc80189bbd.jpg', '8653eb6c64ab52bf7c6617f2f2150141.jpg', '25/08/2020 17:09:51', '23256', '14956888', 'MACLAREN', 'BRANCA'),
+(129, '9015654', 'ANA PAULA', 'JXO-1213', '42a15c290a879b46db3d750ab702fe01.jpeg', '8712acd754fdbd4abd6571d852150e77.jpg', '25/08/2020 17:13:50', '2512', '11111111111', 'FUSCA', 'AMARELO/BRANDO'),
+(130, '16117373', 'RUGLES', 'JXO-1212', 'a98eaccd4ee8fd9c9f1314dc80189bbd.jpg', '8653eb6c64ab52bf7c6617f2f2150141.jpg', '25/08/2020 17:13:54', '23256', '14956888', 'MACLAREN', 'BRANCA'),
+(131, '9015654', 'ANA PAULA', 'JXO-1213', '42a15c290a879b46db3d750ab702fe01.jpeg', '8712acd754fdbd4abd6571d852150e77.jpg', '25/08/2020 17:13:58', '2512', '11111111111', 'FUSCA', 'AMARELO/BRANDO');
 
 -- --------------------------------------------------------
 
@@ -83,16 +79,20 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `email` varchar(100) NOT NULL,
   `foto` varchar(100) NOT NULL,
   `foto2` varchar(100) NOT NULL,
-  `data` varchar(100) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+  `data` varchar(100) NOT NULL,
+  `rg` varchar(100) NOT NULL,
+  `sarram` varchar(100) NOT NULL,
+  `cor_carr` varchar(100) NOT NULL,
+  `tipo_carr` varchar(100) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `cad`, `nome`, `email`, `foto`, `foto2`, `data`) VALUES
-(4, '5', 'RUGLESSSSS', 'JXO-1212', 'd4c70d1eb76e8d904c663879091f874a.jpg', 'c28cbc47a0f22fbc4cd0ab6d883b76fe.jpg', '24/08/2020 22:06:15'),
-(7, '10', 'rugles', 'rugles@gmaild', '1e07e7aba0bb747a069f7e3d499d2d6a.jpg', '766982327c0b23d6a74f91b0a0d78594.jpg', '24/08/2020 22:06:01');
+INSERT INTO `usuarios` (`id`, `cad`, `nome`, `email`, `foto`, `foto2`, `data`, `rg`, `sarram`, `cor_carr`, `tipo_carr`) VALUES
+(21, '9015654', 'ANA PAULA', 'JXO-1213', '42a15c290a879b46db3d750ab702fe01.jpeg', '8712acd754fdbd4abd6571d852150e77.jpg', '25/08/2020 17:13:58', '11111111111', '2512', 'AMARELO/BRANDO', 'FUSCA'),
+(22, '16117373', 'RUGLES', 'JXO-1212', 'a98eaccd4ee8fd9c9f1314dc80189bbd.jpg', '8653eb6c64ab52bf7c6617f2f2150141.jpg', '25/08/2020 17:13:54', '14956888', '23256', 'BRANCA', 'MACLAREN');
 
 --
 -- Acionadores `usuarios`
@@ -100,9 +100,18 @@ INSERT INTO `usuarios` (`id`, `cad`, `nome`, `email`, `foto`, `foto2`, `data`) V
 DELIMITER $$
 CREATE TRIGGER `usuarios` AFTER UPDATE ON `usuarios`
  FOR EACH ROW INSERT INTO acessos
-(nome,cad,email,foto,foto2,data)
+(nome,cad,rg,sarram,email,tipo_carr,cor_carr,foto,foto2,data)
 VALUES 
-(new.nome,new.cad,new.email,new.foto,new.foto2,new.data)
+(new.nome,
+ new.cad,
+ new.rg, 
+ new.sarram, 
+ new.email,
+ new.tipo_carr,
+ new.cor_carr,
+ new.foto,
+ new.foto2,
+ new.data)
 $$
 DELIMITER ;
 
@@ -130,12 +139,12 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `acessos`
 --
 ALTER TABLE `acessos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=55;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=132;
 --
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=23;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
