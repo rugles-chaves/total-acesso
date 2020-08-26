@@ -22,38 +22,39 @@ include '../model/header.php'
             <div class="column" style="background-color:#aaa;">
             <form  action="<?php echo $_SERVER['PHP_SELF'] ?>"  method="post" enctype="multipart/form-data" name="cadastro"  >
 
-            <label class="w3-text-blue"><b>ID</b></label>
+            <label class="w3-text-black"><b>ID</b></label>
             <input class="w3-input w3-border" name="cod" type="text"></p>
             <p> 
-            <label class="w3-text-blue"><b>NOME</b></label>
+            <label class="w3-text-black"><b>NOME</b></label>
             <input class="w3-input w3-border" name="nome" type="text"></p>
             <p> 
 
-            <label class="w3-text-blue"><b>RG</b></label>
+            <label class="w3-text-black"><b>RG</b></label>
             <input class="w3-input w3-border" name="rg" type="text"></p>
             <p> 
 
-            <label class="w3-text-blue"><b>SARAM</b></label>
+            <label class="w3-text-black"><b>Nº SARAM</b></label>
             <input class="w3-input w3-border" name="sarram" type="text"></p>
-
-            <label class="w3-text-blue"><b>TIPO DE CARRO</b></label>
+                <h1>DADOS DO VEICULO</h1>
+            <label class="w3-text-black"><b>MARCA / MODELO</b></label>
             <input class="w3-input w3-border" name="tipo_carr" type="text"></p>
             <p> 
-            <label class="w3-text-blue"><b>COR DE CARRO</b></label>
+            <label class="w3-text-black"><b>COR DE CARRO</b></label>
             <input class="w3-input w3-border" name="cor_carr" type="text"></p>
 
-            <label class="w3-text-blue" ><b>PLACA</b></label>
+            <label class="w3-text-black" ><b>PLACA</b></label>
             <input class="w3-input w3-border" name="email" type="text" class="data" id="data"></p>
             <p>
+            <h1>IMAGENS</h1>
                 
-            <label class="w3-text-blue"><b>FOTO</b></label>
+            <label class="w3-text-black"><b>FOTO</b></label>
             <input class="w3-input w3-border" type="file" name="foto"></p>
             <p>
-            <label class="w3-text-blue"><b>CARRO</b></label>
+            <label class="w3-text-black"><b>CARRO</b></label>
             <input class="w3-input w3-border" type="file" name="foto2"></p>
             <p>
 
-            <input class="w3-btn w3-blue" type="submit" name="cadastrar" value="Cadastrar" />
+            <input class="w3-btn w3-black" type="submit" name="cadastrar" value="Cadastrar" />
             </form>
   </div>
   

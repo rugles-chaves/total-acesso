@@ -143,7 +143,7 @@ img.scaled {
       <li>
       <a href="#">CADASTROS</a></li>
       <li><a href="#">RELATORIOS</a></li>
-      <li><a href="#">VISUALIZADOR</a></li>
+      <li><a href="visu.php">VISUALIZADOR</a></li>
     </ul>
   
 

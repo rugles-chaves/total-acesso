@@ -73,9 +73,10 @@ article {
   float: center;
   padding: auto;
   width: auto;
-  background-color: #f1f1f1;
+  background-color: #8B0000;
   height: auto; /* only for demonstration, should be removed */
 }
+
 
 /* Clear floats after the columns */
 section:after {

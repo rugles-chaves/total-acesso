@@ -18,11 +18,12 @@ while ($usuario = mysql_fetch_object($sql)) {
   //  echo "<b>Email:</b> " . $usuario->email . "<br /><br />";
 //}
 ?>
+<meta http-equiv="refresh" content="1">
             <form action="#">
                     <fieldset>
                    
             <div class=figure>
-                    <p> <?php echo "<img src='fotos/".$usuario->foto."' alt='Foto de exibição' width='300' height='300'/><br />"; ?>
+                    <p> <?php echo "<img src='fotos/".$usuario->foto."' alt='Foto de exibição' width='400' height='400'/><br />"; ?>
                         
                     <p><?php echo "<b>NOME:</b> " . $usuario->nome . "<br />";  ?>
                     <p><?php echo "<b>RG:</b> " . $usuario->rg . "<br />";  ?>
@@ -30,7 +31,7 @@ while ($usuario = mysql_fetch_object($sql)) {
             </div>
 
             <div class=figure>
-                    <p> <?php echo "<img src='fotos/".$usuario->foto2."' alt='Foto de exibição' width='300' height='300'/><br />"; ?>
+                    <p> <?php echo "<img src='fotos/".$usuario->foto2."' alt='Foto de exibição' width='400' height='400'/><br />"; ?>
                         
                     <p><?php echo "<b>PLACA:</b> " . $usuario->email . "<br />";  ?>
                     <p><?php echo "<b>MODELO:</b> " . $usuario->tipo_carr . "<br />";  ?>
