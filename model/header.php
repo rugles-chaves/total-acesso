@@ -140,9 +140,10 @@ img.scaled {
 
 
     <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
+      <li>
+      <a href="#">CADASTROS</a></li>
+      <li><a href="#">RELATORIOS</a></li>
+      <li><a href="#">VISUALIZADOR</a></li>
     </ul>
   
 
